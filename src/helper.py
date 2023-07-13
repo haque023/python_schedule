@@ -9,7 +9,7 @@ class response:
         self.credit = credit
         self.balance = balance
 
-    def extract_text_from_pdf(pdf_file: str) -> [str]:
+    def extract_text_from_pdf(pdf_file):
         with open(pdf_file, 'rb') as pdf:
             reader = PyPDF2.PdfFileReader(pdf, strict=False)
             pdf_text = []

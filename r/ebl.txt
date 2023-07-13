@@ -1,0 +1,62 @@
+M/S MAGNUM STEEL INDUSTRIES LTD                                                                                    
+HOUSE 15 ROAD 24(CNW) 2ND FLOOR)                                                                                   
+GULSHAN                                                                                                            
+                                                                                                                   
+DHAKA                                                                                                              
+                                                                    Account Number : 1011220000772                 
+                                                                    Product Name   : Short Notice Deposit - SND-Cor
+                                                                    Period From    : 01-JUL-22 - 30-JUN-23         
+                                                                    Page           : 1                             
+EASTERN BANK LIMITED                                                Currency Name  : BANGLADESH TAKA               
+Principal Branch                                                    Branch Code    : 101                           
+Jiban Bima Bhaban                                                   Customer Id    : 0290275                       
+10 , Dilkusha C/A                           ONLINE STATEMENT                                                       
+Dhaka-1000                                                                                                         
+TRN. DATE  DESCRIPTIONS                       REFERENCES               DEBITS         CREDITS             BALANCE  
+01-JUL-22   Opening Balance                                                           72,129.74           72,129.74
+                                                                                                                   
+18-JUL-22   BANK STATEMENT ISSUE FEE & VAT                           575.00                               71,554.74
+            ON CHARGE //1331461221990002                                                                           
+                                                                                                                   
+31-DEC-22   IC INTEREST LIQUIDATION -                                                    366.00           71,920.74
+            1011220000772 //101I122BDT000001                                                                       
+                                                                                                                   
+31-DEC-22   WITHOLDING SOURCE TAX ON CASA                             36.60                               71,884.14
+            ACCOUNT - 1011220000772                                                                                
+            //101I122BDT000002                                                                                     
+                                                                                                                   
+31-DEC-22   Account Maintenance Service                              500.00                               71,384.14
+            Charges - 1011220000772                                                                                
+            //101LEDGBDT000001                                                                                     
+                                                                                                                   
+31-DEC-22   VAT on Account Maintenance Fees                           75.00                               71,309.14
+            - 1011220000772                                                                                        
+            //101LEDGBDT000002                                                                                     
+                                                                                                                   
+27-FEB-23   CIB Charge CIB Charge                                    851.00                               70,458.14
+            Realization_Feb-2023                                                                                   
+            //9990736230580049                                                                                     
+                                                                                                                   
+28-JUN-23   IC INTEREST LIQUIDATION -                                                    355.60           70,813.74
+            1011220000772 //101I122BDT000001                                                                       
+                                                                                                                   
+28-JUN-23   WITHOLDING SOURCE TAX ON CASA                             35.56                               70,778.18
+            ACCOUNT - 1011220000772                                                                                
+            //101I122BDT000002                                                                                     
+                                                                                                                   
+28-JUN-23   Account Maintenance Service                              500.00                               70,278.18
+            Charges - 1011220000772                                                                                
+            //101LEDGBDT000001                                                                                     
+                                                                                                                   
+28-JUN-23   VAT on Account Maintenance Fees                           75.00                               70,203.18
+            - 1011220000772                                                                                        
+            //101LEDGBDT000002                                                                                     
+                                                                                                                   
+            STATEMENT CLOSING BALANCE                                                                   70,203.18  
+-------------------------------------------------------------------------------------------------------------------
+              OPENING BALANCE                   72,129.74                                                          
+              DEBITS                             2,648.16       DRCOUNT 8                                          
+              CREDITS                              721.60       CRCOUNT 2                                          
+              UNCOLLECTED FUNDS                                                                                    
+              UNSETTLED DEBIT CARD TRANSACTION          0                                                          
+              * = UNAUTH ENTRY / R = REVERSAL

@@ -1,18 +1,31 @@
+import os
+import time
 from datetime import datetime
 import re
-from flaskr.services.helper import response
+
+import aiohttp
+import requests
+
+from db import Is_File_Exists, Insert_FilRead
+from helper import response
 from decimal import Decimal
 import json
-from flaskr.database import database
 
 
-def premiere_statement_save():
-    db = database()
-    extracted_text = response.extract_text_from_pdf('file/PremireBank.pdf')
+async def premiere_all_files():
+    dir_list = os.listdir("../r")
+    for f in dir_list:
+        if 'premiere' in f and '.pdf' in f:
+            if Is_File_Exists(f, "../r"):
+                await premiere_statement_save("../r/" + f)
+
+
+async def premiere_statement_save(file):
+    extracted_text = response.extract_text_from_pdf(file)
     allText = ""
     for text in extracted_text:
         allText += text
-    f = open("file/PremireBank.txt", "w")
+    f = open("../r/PremireBank.txt", "w")
     f.write(allText)
     f.close()
     pattern = '([0-9,]+).(.{2}) ([0-9 \/A-Za-z;\-.\n:\%()\[\]&]+)(\d{2}\/\d{1,2}\/\d{4}) T  ([0-9,.]+)  ([0-9,.]+)'
@@ -20,11 +33,15 @@ def premiere_statement_save():
     result_ = re.findall("([0-9 ]+) A\/C No [A-Z ]+:", allText)
     _opening = re.findall("Opening Balance +([0-9,.]+)", allText)
 
+    if len(result_) <= 0:
+        return
     account_no = result_[0]
-    account_Id = db.get_bank_account_id_by_account_no(account_no)
     opening = float(_opening[0].replace(',', ''))
     _list = []
+    myJSON = []
+    index = 0
     for f in result:
+        index += 1
         balance = float(f[0].replace(',', '')) + float("." + f[1].replace(',', ''))
         debit = float(f[4].replace(',', ''))
         credit = float(f[5].replace(',', ''))
@@ -32,11 +49,25 @@ def premiere_statement_save():
         date = datetime.strptime(f[3], '%d/%m/%Y').date().strftime('%m-%d-%Y')
         r = response(date, narration, debit, credit, balance)
         _list.append(r)
-        db.add_statement_replica(
-            body_object={'Serial': 1, 'BankAccountID': account_Id, 'date': date, 'Particulars': narration,
-                         'InstrumentNo': '',
-                         'debit': debit, 'credit': credit, 'balance': balance})
+        elt0 = {}
+        elt0["serial"] = index
+        elt0["bankAccountId"] = 0
+        elt0["dteDate"] = datetime.strptime(date, "%m-%d-%Y").strftime("%Y-%m-%d")
+        elt0["particulars"] = ""
+        elt0["accountNo"] = account_no
+        elt0["instrumentNo"] = ""
+        elt0["debit"] = debit
+        elt0["credit"] = credit
+        elt0["balance"] = balance
+        elt0["insertBy"] = -100
+        elt0["dteInsertDateTime"] = datetime.now().strftime("%Y-%m-%d")
+        myJSON.append(elt0)
 
-    return "Save Successfully"
-    # jsonStr = json.dumps([obj.__dict__ for obj in list])
-    # return jsonStr
+    async with aiohttp.ClientSession() as session:
+        async with session.post("https://erp.ibos.io/fino/FinancialStatement/CreateTempDataEntry", json=myJSON) as resp:
+            res = await resp.json()
+            print(res["message"])
+            if res["message"] == "Save Successfully":
+                Insert_FilRead(file, "../r", True)
+    time.sleep(6)
+

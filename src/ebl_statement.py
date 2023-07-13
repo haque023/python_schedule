@@ -1,15 +1,30 @@
+import os
 import re
-from flaskr.services.helper import response
-from flaskr.database import database
+import time
+from datetime import datetime
+
+import aiohttp
+import requests
+
+from db import Insert_FilRead, Is_File_Exists
+from helper import response
 
 
-def ebl_statement_save():
-    db = database()
-    extracted_text = response.extract_text_from_pdf('file/ebl.pdf')
+async def ebl_all_files():
+    dir_list = os.listdir("../r")
+    for f in dir_list:
+        if 'ebl' in f and '.pdf' in f:
+            if Is_File_Exists(f, "../r"):
+                await ebl_statement_save("../r/" + f)
+
+
+async def ebl_statement_save(file):
+    # db = database()
+    extracted_text = response.extract_text_from_pdf(file)
     allText = ""
     for text in extracted_text:
         allText += text
-    f = open("file/ebl.txt", "w")
+    f = open("../r/ebl.txt", "w")
     f.write(allText)
     f.close()
 
@@ -20,12 +35,15 @@ def ebl_statement_save():
 
     account_pattern = " +Account Number : ([0-9]+)"
     result_ = re.findall(account_pattern, allText)
+    if len(result_) <= 0:
+        return
+
     account_no = result_[0]
-    account_Id = db.get_bank_account_id_by_account_no(account_no)
     _list = []
     opening = 0
     last_balance = 0
     index = 0
+    myJSON = []
     for f in result:
         last = ""
         if index != 0:
@@ -42,7 +60,24 @@ def ebl_statement_save():
             opening = balance
             continue
         _list.append(r)
-        db.add_statement_replica(
-            body_object={'Serial': 1, 'BankAccountID': account_Id, 'date': date, 'Particulars': narration, 'InstrumentNo': '',
-                         'debit': debit, 'credit': credit, 'balance': balance})
-    return "Save Successfully"
+        elt0 = {}
+        elt0["serial"] = index
+        elt0["bankAccountId"] = 0
+        elt0["dteDate"] = datetime.strptime(date, "%d-%b-%y").strftime("%Y-%m-%d")
+        elt0["particulars"] = ""
+        elt0["accountNo"] = account_no
+        elt0["instrumentNo"] = ""
+        elt0["debit"] = debit
+        elt0["credit"] = credit
+        elt0["balance"] = balance
+        elt0["insertBy"] = -100
+        elt0["dteInsertDateTime"] = datetime.now().strftime("%Y-%m-%d")
+        myJSON.append(elt0)
+
+    async with aiohttp.ClientSession() as session:
+        async with session.post("https://erp.ibos.io/fino/FinancialStatement/CreateTempDataEntry", json=myJSON) as resp:
+            res = await resp.json()
+            print(res["message"])
+            if res["message"] == "Save Successfully":
+                Insert_FilRead(file, "../r", True)
+    time.sleep(10)

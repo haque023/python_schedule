@@ -1,0 +1,138 @@
+Statement details|
+6 of1 Page 04 Jul 2023 | Account number 001-004183-011Not AvailableNot Available
+781,463.95781,463.95
+Specified date range 05 Jan 2023 to 04 Jul 2023As atCurrent available balanceAs atCurrent ledger balance03 Jul 202303 Jul 2023
+781,463.95781,463.95
+FromClosing available balance brought forwardFromClosing ledger balance brought forward
+Account typeAccount statusIBANBIC HSBCBDDH
+Not AvailableBangladesh
+Active
+Current accountLocationCurrency BDTBank name HK and Shanghai Banking Corp LtdAccount number 001-004183-011Account name AKIJ ESSENTIALS LIMITED
+Balance Debit amount Credit amount Value date Time TRN type Customer reference Bank reference Post date
+Balance as at close 15 Jun 2023    781,463.95
+         15 Jun 2023 NONREF NONREF TFR- 15:23 15 Jun 2023  781,463.95 -734,175.62  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209287, 0000285923020103
+Balance brought forward 15 Jun 2023    1,515,639.57
+Balance as at close 08 Jun 2023    1,515,639.57
+         08 Jun 2023 NONREF NONREF TFR- 14:49 08 Jun 2023  1,515,639.57 -2,718.94  
+Narrative AKIJ ESSENTIALS LIMITED, VAT ON ADVISING CHARGE DPCDAK209280
+         08 Jun 2023 NONREF NONREF TFR- 14:49 08 Jun 2023  1,518,358.51 -18,126.27  
+Narrative AKIJ ESSENTIALS, ADVISING BANK CHARGE DPCDAK209280
+Balance brought forward 08 Jun 2023    1,536,484.78
+Balance as at close 06 Jun 2023    1,536,484.78
+         06 Jun 2023 RDR06063BPEE4G74 2250606238712211 TFR+ 17:07 06 Jun 2023  1,536,484.78  677,600.00
+Narrative AGROSHIFT LIMITED
+Balance brought forward 06 Jun 2023    858,884.78
+Balance as at close 01 Jun 2023    858,884.78
+         01 Jun 2023 NONREF NONREF TFR- 19:32 01 Jun 2023  858,884.78 -915.40  Statement details|
+6 of2 Page 04 Jul 2023 | Account number 001-004183-011Balance Debit amount Credit amount Value date Time TRN type Customer reference Bank reference Post date
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209280, 0000285923020102
+Balance brought forward 01 Jun 2023    859,800.18
+Balance as at close 28 May 2023    859,800.18
+         28 May 2023 NONREF NONREF TFR- 14:47 28 May 2023  859,800.18 -915.40  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209285, 0000285923020512
+Balance brought forward 28 May 2023    860,715.58
+Balance as at close 30 Apr 2023    860,715.58
+         30 Apr 2023 NONREF NONREF TFR- 23:08 30 Apr 2023  860,715.58 -915.40  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209285, 0000285923020512
+Balance brought forward 30 Apr 2023    861,630.98
+Balance as at close 27 Apr 2023    861,630.98
+         27 Apr 2023 NONREF NONREF TFR- 16:35 27 Apr 2023  861,630.98 -631,981.57  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209285, 0000285923020512
+         27 Apr 2023 RDR27043BPAPYU4G 1252704230001331 TFR+ 13:42 27 Apr 2023  1,493,612.55  1,000,000.00
+Narrative Akij Essential Ltd.
+Balance brought forward 27 Apr 2023    493,612.55
+Balance as at close 17 Apr 2023    493,612.55
+         17 Apr 2023 NONREF NONREF TFR- 20:05 17 Apr 2023  493,612.55 -915.40  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209285, 0000285923020512
+         17 Apr 2023 NONREF NONREF TFR- 20:04 17 Apr 2023  494,527.95 -915.40  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209280, 0000285923020102
+Balance brought forward 17 Apr 2023    495,443.35
+Balance as at close 11 Apr 2023    495,443.35
+         11 Apr 2023 NONREF NONREF TFR- 17:08 11 Apr 2023  495,443.35 -1,194,311.42  
+Narrative IMP BILL COMM, DPBMBD309816DAK DPCDAK305960, 0000285923020865
+         11 Apr 2023 RDR11043BP99M2DC 1251104230006103 TFR+ 16:02 11 Apr 2023  1,689,754.77  1,500,000.00Statement details|
+6 of3 Page 04 Jul 2023 | Account number 001-004183-011Balance Debit amount Credit amount Value date Time TRN type Customer reference Bank reference Post date
+Narrative AKIJ CEMENT COMPANY LIMITED
+Balance brought forward 11 Apr 2023    189,754.77
+Balance as at close 29 Mar 2023    189,754.77
+         29 Mar 2023 NONREF NONREF TFR- 17:20 29 Mar 2023  189,754.77 -1,725.00  
+Narrative IMP SHIPPG GTEE, COMM/CHARGES SGTDAK307036
+Balance brought forward 29 Mar 2023    191,479.77
+Balance as at close 23 Mar 2023    191,479.77
+         23 Mar 2023 NONREF NONREF TFR- 18:27 23 Mar 2023  191,479.77 -247,321.68  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209285, 0000285923020512
+         23 Mar 2023 RDR23033BP7J6QO0 1302303235301813 TFR+ 16:57 23 Mar 2023  438,801.45  300,000.00
+Narrative AKIJ CEMENT COMPANY LTD
+Balance brought forward 23 Mar 2023    138,801.45
+Balance as at close 20 Mar 2023    138,801.45
+         20 Mar 2023 NONREF NONREF TFR- 22:44 20 Mar 2023  138,801.45 -915.40  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK305960, 0000285923020865
+         20 Mar 2023 NONREF NONREF TFR- 03:43 20 Mar 2023  139,716.85 -345.00  
+Narrative STANDING INSTRUCTION 005, ACCOUNT MAINTENANCE FEES + VAT OF 2H22
+Balance brought forward 20 Mar 2023    140,061.85
+Balance as at close 14 Mar 2023    140,061.85
+         14 Mar 2023 NONREF NONREF TFR- 14:52 14 Mar 2023  140,061.85 -2,643.39  
+Narrative AKIJ ESSENTIALS LIMITED, VAT ON ADVISING CHARGE DPCDAK209280
+         14 Mar 2023 NONREF NONREF TFR- 14:51 14 Mar 2023  142,705.24 -17,622.60  
+Narrative AKIJ ESSENTIALS LIMITED, ADVISING BANK CHARGE DPCDAK209280
+Balance brought forward 14 Mar 2023    160,327.84
+Balance as at close 09 Mar 2023    160,327.84
+         09 Mar 2023 NONREF NONREF TFR- 16:30 09 Mar 2023  160,327.84 -915.40  Statement details|
+6 of4 Page 04 Jul 2023 | Account number 001-004183-011Balance Debit amount Credit amount Value date Time TRN type Customer reference Bank reference Post date
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK305960, 0000285923020865
+Balance brought forward 09 Mar 2023    161,243.24
+Balance as at close 27 Feb 2023    161,243.24
+         27 Feb 2023 NONREF NONREF TFR- 23:27 27 Feb 2023  161,243.24 -915.40  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209280, 0000285923020102
+Balance brought forward 27 Feb 2023    162,158.64
+Balance as at close 20 Feb 2023    162,158.64
+         20 Feb 2023 NONREF NONREF TFR- 21:12 20 Feb 2023  162,158.64 -915.40  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209280, 0000285923020102
+Balance brought forward 20 Feb 2023    163,074.04
+Balance as at close 16 Feb 2023    163,074.04
+         16 Feb 2023 NONREF NONREF TFR- 23:28 16 Feb 2023  163,074.04 -275,461.49  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209280, 0000285923020102
+Balance brought forward 16 Feb 2023    438,535.53
+Balance as at close 15 Feb 2023    438,535.53
+         15 Feb 2023 NONREF NONREF TFR- 20:08 15 Feb 2023  438,535.53 -163,519.29  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209285, 0000285923020512
+Balance brought forward 15 Feb 2023    602,054.82
+Balance as at close 14 Feb 2023    602,054.82
+         14 Feb 2023 NONREF NONREF TFR- 22:11 14 Feb 2023  602,054.82 -1,070,393.91  
+Narrative DC ISSUE COMM, CHARGES DPCDAK305960, 0000285923020865
+         14 Feb 2023 RDR14023C045211C 1251402230001445 TFR+ 14:37 14 Feb 2023  1,672,448.73  500,000.00
+Narrative Akij Essential Ltd.
+Balance brought forward 14 Feb 2023    1,172,448.73
+Balance as at close 06 Feb 2023    1,172,448.73
+         06 Feb 2023 NONREF NONREF TFR+ 15:09 06 Feb 2023  1,172,448.73  32,347.04Statement details|
+6 of5 Page 04 Jul 2023 | Account number 001-004183-011Balance Debit amount Credit amount Value date Time TRN type Customer reference Bank reference Post date
+Narrative DPCDAK209285, REFUNDED INCOME TAX DEBITED ON 26JAN2023
+Balance brought forward 06 Feb 2023    1,140,101.69
+Balance as at close 26 Jan 2023    1,140,101.69
+         26 Jan 2023 NONREF NONREF TFR- 22:10 26 Jan 2023  1,140,101.69 -793,149.59  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209285, 0000285923020512
+         26 Jan 2023 RDR26013BP2ECEWW 1252601230000659 TFR+ 13:27 26 Jan 2023  1,933,251.28  1,000,000.00
+Narrative AKIJ CEMENT COMPANY LIMITED
+Balance brought forward 26 Jan 2023    933,251.28
+Balance as at close 24 Jan 2023    933,251.28
+         24 Jan 2023 NONREF NONREF TFR- 18:03 24 Jan 2023  933,251.28 -7,615,167.77  
+Narrative REALIZED APPLICABLE, ARRANGEMENT FEE + 15% VAT RECEIVED
+Balance brought forward 24 Jan 2023    8,548,419.05
+Balance as at close 23 Jan 2023    8,548,419.05
+         23 Jan 2023 RDR23013C024WHXD 1302301235301230 TFR+ 16:37 23 Jan 2023  8,548,419.05  7,500,000.00
+Narrative AKIJ CEMENT COMPANY LTD
+Balance brought forward 23 Jan 2023    1,048,419.05
+Balance as at close 15 Jan 2023    1,048,419.05
+         15 Jan 2023 NONREF NONREF TFR- 23:21 15 Jan 2023  1,048,419.05 -393,263.90  
+Narrative DC ISSUE COMM, CHARGES DPCDAK209280, 0000285923020102
+         15 Jan 2023 NONREF NONREF TFR- 16:23 15 Jan 2023  1,441,682.95 -1,854,976.02  
+Narrative DC AMENDMENT COMM, CHARGES DPCDAK209287, 0000285923020103
+         15 Jan 2023 RDR15013BP1E7CAP 1302301155300364 TFR+ 13:59 15 Jan 2023  3,296,658.97  3,000,000.00
+Narrative AKIJ ESSENTIALS LIMITED
+Balance brought forward 15 Jan 2023    296,658.97
+Balance as at close 05 Jan 2023    296,658.97
+         05 Jan 2023 NONREF NONREF TFR- TAX 00:00 04 Jan 2023  296,658.97 -50,000.00  Statement details|
+6 of6 Page 04 Jul 2023 | Account number 001-004183-011Balance Debit amount Credit amount Value date Time TRN type Customer reference Bank reference Post date
+Narrative For BDHSBC001004183011, EXCISE DUTY APPLCN. FOR DD A/c For 2022
+Balance brought forward 05 Jan 2023    346,658.97
