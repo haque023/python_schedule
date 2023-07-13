@@ -1,30 +1,26 @@
-import asyncio
-import json
 import os
 import re
 from datetime import datetime
 import time
-
 import aiohttp
-import requests
 from db import Is_File_Exists, Insert_FilRead
 from helper import response
 
 
 async def hsbc_all_files():
-    dir_list = os.listdir("../r")
+    dir_list = os.listdir("C:/Users/Emdad-Pc/Desktop/python/r")
     for f in dir_list:
         if 'hsbc' in f and '.pdf' in f:
             if Is_File_Exists(f, "../r"):
-                await hsbc_statement_save("../r/" + f)
+                await hsbc_statement_save("C:/Users/Emdad-Pc/Desktop/python/r/" + f, f)
 
 
-async def hsbc_statement_save(file):
+async def hsbc_statement_save(file, name):
     extracted_text = response.extract_text_from_pdf(file)
     allText = ""
     for text in extracted_text:
         allText += text
-    f = open("../r/hsbc.txt", "w")
+    f = open("C:/Users/Emdad-Pc/Desktop/python/r/hsbc.txt", "w")
     f.write(allText)
     f.close()
     pattern = '(\d{1,2} [A-Z]{1}[a-z]{2} \d{4}) ([A-Z0-9 \-+]+) ([\d{2}:\d{2}]+) (\d{1,2} [A-Z]{1}[a-z]{2} \d{4}) +([0-9,.-]+) +([0-9,.-]+)'
@@ -67,7 +63,9 @@ async def hsbc_statement_save(file):
     async with aiohttp.ClientSession() as session:
         async with session.post("https://erp.ibos.io/fino/FinancialStatement/CreateTempDataEntry", json=myJSON) as resp:
             res = await resp.json()
-            print(res["message"])
             if res["message"] == "Save Successfully":
-                Insert_FilRead(file, "../r", True)
-    time.sleep(10)
+                Insert_FilRead(name, "../r", True)
+            else:
+                Insert_FilRead(name, "../r", False)
+
+    time.sleep(6)

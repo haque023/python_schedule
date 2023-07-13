@@ -2,30 +2,26 @@ import os
 import time
 from datetime import datetime
 import re
-
 import aiohttp
-import requests
-
 from db import Is_File_Exists, Insert_FilRead
 from helper import response
-from decimal import Decimal
-import json
+
 
 
 async def premiere_all_files():
-    dir_list = os.listdir("../r")
+    dir_list = os.listdir("C:/Users/Emdad-Pc/Desktop/python/r")
     for f in dir_list:
         if 'premiere' in f and '.pdf' in f:
             if Is_File_Exists(f, "../r"):
-                await premiere_statement_save("../r/" + f)
+                await premiere_statement_save("C:/Users/Emdad-Pc/Desktop/python/r/" + f, f)
 
 
-async def premiere_statement_save(file):
+async def premiere_statement_save(file, name):
     extracted_text = response.extract_text_from_pdf(file)
     allText = ""
     for text in extracted_text:
         allText += text
-    f = open("../r/PremireBank.txt", "w")
+    f = open("C:/Users/Emdad-Pc/Desktop/python/r/PremireBank.txt", "w")
     f.write(allText)
     f.close()
     pattern = '([0-9,]+).(.{2}) ([0-9 \/A-Za-z;\-.\n:\%()\[\]&]+)(\d{2}\/\d{1,2}\/\d{4}) T  ([0-9,.]+)  ([0-9,.]+)'
@@ -66,8 +62,10 @@ async def premiere_statement_save(file):
     async with aiohttp.ClientSession() as session:
         async with session.post("https://erp.ibos.io/fino/FinancialStatement/CreateTempDataEntry", json=myJSON) as resp:
             res = await resp.json()
-            print(res["message"])
             if res["message"] == "Save Successfully":
-                Insert_FilRead(file, "../r", True)
+                Insert_FilRead(name, "../r", True)
+            else:
+                Insert_FilRead(name, "../r", False)
+
     time.sleep(6)
 
